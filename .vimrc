@@ -27,7 +27,6 @@ runtime macros/matchit.vim
 
 " various settings
 set autoindent                 " Minimal automatic indenting for any filetype.
-filetype plugin indent on
 set backspace=indent,eol,start " Proper backspace behavior.
 set hidden                     " Possibility to have more than one unsaved buffers.
 set incsearch                  " Incremental search, hit `<CR>` to stop.
@@ -35,4 +34,15 @@ set ruler                      " Shows the current line number at the bottom-rig
                                " of the screen.
 set wildmenu                   " Great command-line completion, use `<Tab>` to move
                                " around and `<CR>` to validate.
+set tabstop=4		       " number of visual spaces per TAB
+set softtabstop=4              " number of spaces in tab when editing
+set expandtab                  " tabs are spaces
+set showmatch                  " highlight matching [{()}]
+set hlsearch                   " highlight matches
 
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+" move to beginning/end of line
+nnoremap B ˆ
+nnoremap E $
