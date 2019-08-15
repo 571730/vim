@@ -44,5 +44,8 @@ set hlsearch                   " highlight matches
 nnoremap j gj
 nnoremap k gk
 " move to beginning/end of line
-nnoremap B ˆ
+nnoremap B 0
 nnoremap E $
+
+" use jj to exit input mode
+inoremap jj <Esc>
