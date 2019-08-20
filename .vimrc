@@ -39,6 +39,8 @@ set softtabstop=4              " number of spaces in tab when editing
 set expandtab                  " tabs are spaces
 set showmatch                  " highlight matching [{()}]
 set hlsearch                   " highlight matches
+set ignorecase                 " ignore case when searching
+set smartcase                  " do not ignore when actually typing capital letters
 
 " move vertically by visual line
 nnoremap j gj
